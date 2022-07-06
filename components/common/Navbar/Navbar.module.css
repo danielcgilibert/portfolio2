@@ -1,0 +1,25 @@
+.nav {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 21px;
+  margin-right: 24px;
+}
+.nav ul li {
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+  border-bottom: 1px solid black;
+}
