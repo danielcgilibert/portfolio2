@@ -1,22 +1,12 @@
 import Card from '@components/ui/Card'
 import { proyects } from '@constants/proyects'
-import styled from '@emotion/styled'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import styles from './Proyects.module.css'
+import { SwiperSlide } from 'swiper/react'
+import { ProyectsStyled, SwipperStyled } from './styles'
 
-const SwipperStyled = styled(Swiper)`
-  width: 100%;
-  cursor: grab;
-  padding: 3px 3px;
-
-  &:active {
-    cursor: grabbing;
-  }
-`
 const Projects = () => {
   return (
     <>
-      <article className={styles.projects}>
+      <ProyectsStyled>
         <h1>Proyectos</h1>
         <p>Algunos de los proyectos que desarrollo:</p>
         <SwipperStyled
@@ -35,7 +25,7 @@ const Projects = () => {
             </SwiperSlide>
           ))}
         </SwipperStyled>
-      </article>
+      </ProyectsStyled>
     </>
   )
 }

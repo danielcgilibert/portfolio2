@@ -1,9 +1,9 @@
 import { Sun, Translate } from 'phosphor-react'
-import styles from './Navbar.module.css'
+import { NavbarStyled } from './styles'
 
 const Navbar = ({ children }) => {
   return (
-    <nav className={styles.nav}>
+    <NavbarStyled>
       <span>Daniel Carmona Gilibert</span>
 
       <ul>
@@ -13,7 +13,7 @@ const Navbar = ({ children }) => {
         <Sun size={20} weight="light" />
         <Translate size={20} weight="light" />
       </ul>
-    </nav>
+    </NavbarStyled>
   )
 }
 

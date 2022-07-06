@@ -1,7 +1,16 @@
 import Presentation from '@components/Presentation'
 import Proyects from '@components/Proyects'
+import styled from '@emotion/styled'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
+export const MainStyled = styled.main`
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 65% 35%;
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+  margin-top: 40px;
+`
 
 export default function Home() {
   return (
@@ -12,10 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.container}>
+      <MainStyled>
         <Presentation />
         <Proyects />
-      </main>
+      </MainStyled>
     </>
   )
 }

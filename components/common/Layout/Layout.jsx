@@ -1,7 +1,7 @@
-import styles from './Layout.module.css'
+import { LayoutStyled } from './styles'
 
 const Layout = ({ children }) => {
-  return <div className={styles.layout}>{children}</div>
+  return <LayoutStyled>{children}</LayoutStyled>
 }
 
 export default Layout

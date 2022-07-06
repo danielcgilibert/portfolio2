@@ -1,11 +1,11 @@
 import Button from '@components/ui/Button'
 import { RoughNotation } from 'react-rough-notation'
-import styles from './Presentation.module.css'
+import { ImageProfileStyled, PresentationStyled } from './styles'
 
 const Presentation = () => {
   return (
     <>
-      <article className={styles.presentation}>
+      <PresentationStyled>
         <div>
           <h1>
             ¡Hola! Soy Daniel , un desarrollador especializado en el Front-End.
@@ -65,9 +65,8 @@ const Presentation = () => {
             </a>
           </Button>
         </div>
-      </article>
-      <img
-        className={styles.imageProfile}
+      </PresentationStyled>
+      <ImageProfileStyled
         src={'/images/profile/profile.jfif'}
         alt={'profile'}
       />
