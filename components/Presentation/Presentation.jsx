@@ -54,7 +54,7 @@ const Presentation = () => {
         </div>
 
         <div>
-          <Button>
+          <Button background={'black'}>
             <a Target="_blank" href="https://github.com/danielcgilibert">
               Visitar Linkendin
             </a>

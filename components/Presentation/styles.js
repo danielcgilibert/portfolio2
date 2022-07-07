@@ -14,6 +14,10 @@ export const PresentationStyled = styled.article`
   & p {
     font-size: 1.03rem;
   }
+
+  & button {
+    margin: 0px 20px 0px 0px;
+  }
 `
 
 export const ImageProfileStyled = styled.img`
