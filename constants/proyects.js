@@ -32,7 +32,7 @@ export const proyects = [
 
   {
     cover: '/images/proyects/panel.png',
-    name: 'panel admin docker',
+    name: 'Panel admin docker',
     desc: 'panel para administrar contenedores docker',
     hrefCode: 'https://github.com/danielcgilibert/panelAdminDocker',
     hrefWeb: undefined,
@@ -41,7 +41,7 @@ export const proyects = [
 
   {
     cover: '/images/proyects/insta.png',
-    name: 'instagram clon',
+    name: 'Instagram clon',
     desc: 'Copia de la aplicación de instagram con GraphQL, Apollo Server, MongoDB y ReactJS',
     hrefCode: 'https://github.com/danielcgilibert/instaclone',
     hrefWeb: undefined,
