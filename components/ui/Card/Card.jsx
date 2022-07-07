@@ -1,3 +1,4 @@
+import { Code, Link } from 'phosphor-react'
 import Button from '../Button'
 import SimpleGallery from './SimpleGallery'
 import { CardStyled } from './styles'
@@ -16,18 +17,20 @@ const Card = ({ proyect: { name, cover, hrefCode, hrefWeb } }) => {
           },
         ]}
       />
-      <h3>{name}</h3>
+      <h2>{name}</h2>
       <div className="buttons">
-        <Button width={'30%'} height={'30px'}>
+        <Button width={'100%'} height={'30px'}>
           <a Target="_blank" href={hrefCode}>
-            Visit
+            <Code size={15} />
           </a>
         </Button>
-        <Button width={'30%'} height={'30px'}>
-          <a Target="_blank" href={hrefWeb}>
-            Visit
-          </a>
-        </Button>
+        {hrefWeb && (
+          <Button width={'100%'} height={'30px'}>
+            <a Target="_blank" href={hrefWeb}>
+              <Link size={15} />
+            </a>
+          </Button>
+        )}
       </div>
     </CardStyled>
   )

@@ -6,6 +6,13 @@ export const CardStyled = styled.div`
   border-radius: 10px;
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.39);
   text-align: center;
+  background-color: white;
+
+  & h2 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
 
   & img {
     width: 100%;
@@ -18,5 +25,7 @@ export const CardStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 20px 0px 20px;
+    gap: 15px;
   }
 `
