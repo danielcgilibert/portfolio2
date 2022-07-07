@@ -7,7 +7,7 @@ export const NavbarStyled = styled.nav`
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: bolder;
 
   & ul {
     list-style: none;
