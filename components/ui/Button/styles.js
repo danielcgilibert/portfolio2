@@ -5,21 +5,34 @@ export const ButtonStyled = styled.button`
   margin-top: auto;
   transition: all 0.3s;
   font-size: 1.2rem;
+  background-color: black;
+  color: white;
+  width: ${(props) => (props.width ? props.width : '180px')};
+  height: ${(props) => (props.height ? props.height : '42px')};
 
+  ${(props) =>
+    props.background
+      ? `background: ${props.background} ; color: white;`
+      : `background: white; color: black;`}
+
+  border: 1px solid rgba(179, 178, 178, 0.52);
+
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
   &:hover {
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.24);
   }
 
-  &:nth-of-type(1) {
+  /* &:nth-of-type(1) {
     background-color: black;
     color: white;
     width: ${(props) => (props.width ? props.width : '180px')};
     height: ${(props) => (props.height ? props.height : '42px')};
     background: #000000;
+    border: 1px solid rgba(179, 178, 178, 0.52);
 
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
-    margin-right: 31px;
   }
 
   &:nth-of-type(2) {
@@ -30,5 +43,5 @@ export const ButtonStyled = styled.button`
     background: white;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
-  }
+  } */
 `

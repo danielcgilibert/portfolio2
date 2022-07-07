@@ -1,12 +1,8 @@
 // import styles from './Button.module.css'
 import { ButtonStyled } from './styles'
 
-const Button = ({ width, height, children }) => {
-  return (
-    <ButtonStyled width={width} height={height}>
-      {children}
-    </ButtonStyled>
-  )
+const Button = ({ children, ...props }) => {
+  return <ButtonStyled {...props}>{children}</ButtonStyled>
 }
 
 export default Button
