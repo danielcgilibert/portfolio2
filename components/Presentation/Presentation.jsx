@@ -55,12 +55,25 @@ const Presentation = () => {
 
         <div>
           <Button background={'black'}>
-            <a Target="_blank" href="https://github.com/danielcgilibert">
+            <a
+              Target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/danielcgilibert"
+              data-splitbee-event="External Link"
+              data-splitbee-event-destination="Linkedin"
+            >
               Visitar Linkendin
             </a>
           </Button>
           <Button>
-            <a Target="_blank" href="https://github.com/danielcgilibert">
+            <a
+              Target="_blank"
+              rel="noopener noreferrer"
+              data-splitbee-event="Click CTA"
+              href="https://github.com/danielcgilibert"
+              data-splitbee-event="External Link"
+              data-splitbee-event-destination="Github"
+            >
               Visitar GitHub
             </a>
           </Button>
