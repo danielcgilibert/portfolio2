@@ -2,20 +2,17 @@
 const nextConfig = {
   reactStrictMode: true,
 }
-
-module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: '/bee.js',
-        destination: 'https://cdn.splitbee.io/sb.js',
-      },
-      {
-        source: '/_hive/:slug',
-        destination: 'https://hive.splitbee.io/:slug',
-      },
-    ]
+const rewrites = async () => [
+  {
+    destination: 'https://cdn.splitbee.io/sb.js',
+    source: '/sb.js',
   },
+  {
+    destination: 'https://hive.splitbee.io/:slug',
+    source: '/sb-api/:slug',
+  },
+]
+module.exports = {
+  rewrites,
+  nextConfig,
 }
-
-module.exports = nextConfig
