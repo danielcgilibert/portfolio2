@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
       apiUrl: '/sb-api',
       scriptUrl: '/sb.js',
     })
+    splitbee.enableCookie(true)
   }, [])
 
   return (
