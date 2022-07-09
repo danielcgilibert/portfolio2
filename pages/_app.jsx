@@ -11,7 +11,10 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    splitbee.init()
+    splitbee.init({
+      apiUrl: '/sb-api',
+      scriptUrl: '/sb.js',
+    })
   }, [])
 
   return (

@@ -69,7 +69,6 @@ const Presentation = () => {
             <a
               Target="_blank"
               rel="noopener noreferrer"
-              data-splitbee-event="Click CTA"
               href="https://github.com/danielcgilibert"
               onClick={() => splitbee.track(' Github')}
             >
