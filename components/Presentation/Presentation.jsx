@@ -1,4 +1,5 @@
 import Button from '@components/ui/Button'
+import splitbee from '@splitbee/web'
 import { RoughNotation } from 'react-rough-notation'
 import { ContainerPr, ImageProfileStyled, PresentationStyled } from './styles'
 
@@ -59,8 +60,7 @@ const Presentation = () => {
               Target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/danielcgilibert"
-              data-splitbee-event="External Link"
-              data-splitbee-event-destination="Linkedin"
+              onClick={() => splitbee.track(' Linkendin')}
             >
               Visitar Linkendin
             </a>
@@ -71,8 +71,7 @@ const Presentation = () => {
               rel="noopener noreferrer"
               data-splitbee-event="Click CTA"
               href="https://github.com/danielcgilibert"
-              data-splitbee-event="External Link"
-              data-splitbee-event-destination="Github"
+              onClick={() => splitbee.track(' Github')}
             >
               Visitar GitHub
             </a>
