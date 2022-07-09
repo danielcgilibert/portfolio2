@@ -28,7 +28,6 @@ export default function Home() {
         <title>Daniel Carmona Gilibert</title>
         <meta name="description" content="website of daniel carmona gilibert" />
         <link rel="icon" href="/favicon.ico" />
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       <MainStyled>
