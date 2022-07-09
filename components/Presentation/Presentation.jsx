@@ -1,10 +1,10 @@
 import Button from '@components/ui/Button'
 import { RoughNotation } from 'react-rough-notation'
-import { ImageProfileStyled, PresentationStyled } from './styles'
+import { ContainerPr, ImageProfileStyled, PresentationStyled } from './styles'
 
 const Presentation = () => {
   return (
-    <>
+    <ContainerPr>
       <PresentationStyled>
         <div>
           <h1>
@@ -70,7 +70,7 @@ const Presentation = () => {
         src={'/images/profile/profile.jfif'}
         alt={'profile'}
       />
-    </>
+    </ContainerPr>
   )
 }
 
