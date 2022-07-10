@@ -11,6 +11,13 @@ const Presentation = () => {
           <h1>
             ¡Hola! Soy Daniel , un desarrollador especializado en el Front-End.
           </h1>
+
+          <ImageProfileStyled
+            src={'/images/profile/profile.jfif'}
+            alt={'profile'}
+            className="img-mobile"
+          />
+
           <p>
             Lorem ipsum &nbsp;
             <RoughNotation
@@ -50,7 +57,7 @@ const Presentation = () => {
           </p>
           <p>
             Condimentum mattis pellentesque id nibh. Egestas sed sed risus
-            pretium quam vulputate.{' '}
+            pretium quam vulputate.
           </p>
         </div>
 
@@ -77,9 +84,11 @@ const Presentation = () => {
           </Button>
         </div>
       </PresentationStyled>
+
       <ImageProfileStyled
         src={'/images/profile/profile.jfif'}
         alt={'profile'}
+        className="img-desktop"
       />
     </ContainerPr>
   )

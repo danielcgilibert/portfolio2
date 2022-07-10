@@ -1,4 +1,4 @@
-import { Sun, Translate } from 'phosphor-react'
+import { List, Sun, Translate } from 'phosphor-react'
 import { NavbarStyled } from './styles'
 
 const Navbar = ({ children }) => {
@@ -6,13 +6,16 @@ const Navbar = ({ children }) => {
     <NavbarStyled>
       <span>Daniel Carmona Gilibert</span>
 
-      <ul>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <Sun size={20} weight="light" />
-        <Translate size={20} weight="light" />
-      </ul>
+      <List size={20} weight="bold" className="iconMobile" />
+      <div>
+        <ul>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+          <Sun size={20} />
+          <Translate size={20} />
+        </ul>
+      </div>
     </NavbarStyled>
   )
 }

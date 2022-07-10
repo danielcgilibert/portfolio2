@@ -10,8 +10,27 @@ const Projects = () => {
         <h1>Proyectos</h1>
         <p>Algunos de los proyectos que desarrollo:</p>
         <SwipperStyled
-          slidesPerView={4}
+          slidesPerView="auto"
           slidesPerGroup={1}
+          breakpoints={{
+            320: {
+              slidesPerView: 1.6,
+              spaceBetween: 40,
+            },
+
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          }}
           loop={true}
           loopFillGroupWithBlank={true}
           spaceBetween={50}
