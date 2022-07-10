@@ -1,4 +1,3 @@
-// import styles from './Button.module.css'
 import { ButtonStyled } from './styles'
 
 const Button = ({ children, ...props }) => {

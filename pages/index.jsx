@@ -1,25 +1,6 @@
 import Presentation from '@components/Presentation'
 import Proyects from '@components/Proyects'
-import styled from '@emotion/styled'
 import Head from 'next/head'
-import { bps } from 'theme/bps'
-
-export const MainStyled = styled.main`
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100% 100%;
-  grid-row-gap: 30px;
-  ${bps.mobile} {
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  } */
-
-  ${bps.mobile} {
-    padding: 40px;
-  }
-`
 
 export default function Home() {
   return (
@@ -30,10 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <MainStyled>
-        <Presentation />
-        <Proyects />
-      </MainStyled>
+      <Presentation />
+      <Proyects />
     </>
   )
 }

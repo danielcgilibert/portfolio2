@@ -20,8 +20,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider theme={theme}>
+      <Navbar />
       <Layout>
-        <Navbar />
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>

@@ -14,20 +14,34 @@ const Projects = () => {
           slidesPerGroup={1}
           breakpoints={{
             320: {
-              slidesPerView: 1.6,
+              slidesPerView: 1.3,
+              spaceBetween: 40,
+            },
+
+            360: {
+              slidesPerView: 1.5,
               spaceBetween: 40,
             },
 
             640: {
-              slidesPerView: 2,
+              slidesPerView: 2.2,
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
+              slidesPerView: 2.3,
+              spaceBetween: 30,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1600: {
+              slidesPerView: 4.2,
+              spaceBetween: 30,
+            },
+
+            2500: {
+              slidesPerView: 5.7,
               spaceBetween: 30,
             },
           }}

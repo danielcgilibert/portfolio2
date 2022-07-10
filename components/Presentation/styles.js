@@ -6,13 +6,6 @@ export const PresentationStyled = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 
-  ${bps.desktop} {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-  }
-
   & h1 {
     font-size: 1.9rem;
     margin: 0;
@@ -25,10 +18,30 @@ export const PresentationStyled = styled.div`
   }
 
   & button {
-    margin: 15px 0px 10px 0px;
+    margin: 15px 10px 10px 10px;
 
     ${bps.desktop} {
       margin: 0px 20px 0px 0px;
+    }
+  }
+
+  ${bps.desktop} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  ${bps.desktop2k} {
+    & h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: bold;
+      line-height: 1.22;
+    }
+
+    & p {
+      font-size: 1.4rem;
     }
   }
 `
@@ -57,6 +70,10 @@ export const ContainerPr = styled.article`
       display: none;
     }
   }
+
+  ${bps.desktop2k} {
+    margin-top: 5rem;
+  }
 `
 
 export const ImageProfileStyled = styled.img`
@@ -64,8 +81,6 @@ export const ImageProfileStyled = styled.img`
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.39);
   border-radius: 18px;
   width: 50%;
-  margin-left: auto;
-  margin-top: 25px;
 
   ${bps.desktop} {
     width: 100%;

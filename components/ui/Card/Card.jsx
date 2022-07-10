@@ -20,13 +20,13 @@ const Card = ({ proyect: { name, cover, hrefCode, hrefWeb } }) => {
       <h2>{name}</h2>
       <div className="buttons">
         <Button width={'100%'} height={'30px'}>
-          <a Target="_blank" href={hrefCode}>
+          <a target="_blank" rel="noopener noreferrer" href={hrefCode}>
             <Code size={15} />
           </a>
         </Button>
         {hrefWeb && (
           <Button width={'100%'} height={'30px'}>
-            <a Target="_blank" href={hrefWeb}>
+            <a target="_blank" rel="noopener noreferrer" href={hrefWeb}>
               <Link size={15} />
             </a>
           </Button>

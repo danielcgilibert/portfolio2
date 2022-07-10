@@ -7,7 +7,6 @@ export const ProyectsStyled = styled.article`
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 3;
-  height: 50px;
   padding-top: 15px;
 
   & h1 {
@@ -16,12 +15,9 @@ export const ProyectsStyled = styled.article`
 
   ${bps.desktop} {
     margin-top: 50px;
-
     text-align: left;
-
     grid-column-start: 1;
     grid-column-end: 3;
-    height: 50px;
     padding-top: 15px;
 
     & h1 {

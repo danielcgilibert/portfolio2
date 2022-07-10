@@ -8,7 +8,9 @@ export const NavbarStyled = styled.nav`
   justify-content: end;
   align-items: center;
   margin-right: 15px;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  padding: 15px;
 
   & div {
     display: none;
@@ -19,6 +21,8 @@ export const NavbarStyled = styled.nav`
   }
 
   ${bps.desktop} {
+    padding: 0px;
+    width: 50%;
     margin-top: 5px;
     display: flex;
     flex-direction: row;
@@ -44,7 +48,7 @@ export const NavbarStyled = styled.nav`
       justify-content: space-between;
       align-items: center;
       gap: 21px;
-      margin-right: 24px;
+      margin-right: 10px;
     }
 
     & li {

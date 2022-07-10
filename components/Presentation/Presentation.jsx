@@ -64,7 +64,7 @@ const Presentation = () => {
         <div>
           <Button background={'black'}>
             <a
-              Target="_blank"
+              target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/danielcgilibert"
               onClick={() => splitbee.track(' Linkendin')}
@@ -74,7 +74,7 @@ const Presentation = () => {
           </Button>
           <Button>
             <a
-              Target="_blank"
+              target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/danielcgilibert"
               onClick={() => splitbee.track(' Github')}
