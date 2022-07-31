@@ -8,6 +8,14 @@ export const CardStyled = styled.div`
   text-align: center;
   background-color: white;
 
+  & .pswp-gallery a:first-of-type {
+    display: block;
+  }
+
+  & .pswp-gallery a {
+    display: none;
+  }
+
   & h2 {
     font-weight: 600;
     font-size: 15px;

@@ -1,6 +1,13 @@
 export const proyects = [
   {
-    cover: '/images/proyects/filmoteca.png',
+    covers: [
+      '/images/proyects/filmoteca/filmoteca.png',
+      '/images/proyects/filmoteca/filmoteca2.png',
+      '/images/proyects/filmoteca/filmoteca3.png',
+      '/images/proyects/filmoteca/filmoteca4.png',
+      '/images/proyects/filmoteca/filmoteca6.png',
+      '/images/proyects/filmoteca/filmoteca7.png',
+    ],
     name: 'Filmoteca',
     desc: 'Aplicación de películas con llamadas a distintas API, construida con firebase y react',
     hrefCode: 'https://github.com/danielcgilibert/Filmoteca',
@@ -13,7 +20,11 @@ export const proyects = [
   },
 
   {
-    cover: '/images/proyects/crowdfunding.png',
+    covers: [
+      '/images/proyects/crowdfunding/crowdfunding.png',
+      '/images/proyects/crowdfunding/crowdfunding2.png',
+      '/images/proyects/crowdfunding/crowdfunding3.png',
+    ],
     name: 'Crowdfunding',
     desc: 'Frontend Mentor - Crowdfunding product page',
     hrefCode: 'https://github.com/danielcgilibert/Crowdfunding',
@@ -22,7 +33,7 @@ export const proyects = [
   },
 
   {
-    cover: '/images/proyects/calendar.png',
+    covers: ['/images/proyects/calendar.png'],
     name: 'Calendar',
     desc: 'Aplicación de calendario con React',
     hrefCode: 'https://github.com/danielcgilibert/CalendarApp',
@@ -31,7 +42,7 @@ export const proyects = [
   },
 
   {
-    cover: '/images/proyects/panel.png',
+    covers: ['/images/proyects/panel.png'],
     name: 'Panel admin docker',
     desc: 'panel para administrar contenedores docker',
     hrefCode: 'https://github.com/danielcgilibert/panelAdminDocker',
@@ -40,7 +51,7 @@ export const proyects = [
   },
 
   {
-    cover: '/images/proyects/insta.png',
+    covers: ['/images/proyects/insta.png'],
     name: 'Instagram clon',
     desc: 'Copia de la aplicación de instagram con GraphQL, Apollo Server, MongoDB y ReactJS',
     hrefCode: 'https://github.com/danielcgilibert/instaclone',
@@ -56,7 +67,7 @@ export const proyects = [
   },
 
   {
-    cover: '/images/proyects/nodeDocker.png',
+    covers: ['/images/proyects/nodeDocker.png'],
     name: 'Node+Docker',
     desc: 'Automatización de contenedores con docker',
     hrefCode: 'https://github.com/danielcgilibert/nodeDocker',

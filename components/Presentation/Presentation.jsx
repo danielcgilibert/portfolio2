@@ -1,9 +1,10 @@
 import Button from '@components/ui/Button'
 import splitbee from '@splitbee/web'
-import { RoughNotation } from 'react-rough-notation'
+import { useState } from 'react'
 import { ContainerPr, ImageProfileStyled, PresentationStyled } from './styles'
 
 const Presentation = () => {
+  const [accordionOpen, setAccordionOpen] = useState(false)
   return (
     <ContainerPr>
       <PresentationStyled>
@@ -19,46 +20,102 @@ const Presentation = () => {
           />
 
           <p>
-            Lorem ipsum &nbsp;
-            <RoughNotation
-              type="highlight"
-              color="yellow"
-              multiline={false}
-              show={true}
-              animationDelay={200}
-              customElement="span"
-            >
-              dolor sit amet
-            </RoughNotation>
-            , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Intento siempre desarrollar aplicaciones web simples,eficientes y
+            atractivas para el usuario.
           </p>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est &nbsp;
-            <RoughNotation
-              type="underline"
-              color="#95c4a1"
-              show={true}
-              animationDelay={1000}
-            >
-              laborum.
-            </RoughNotation>
+            Me considero una persona autodidacta, trabajadora y siempre con
+            ambición para seguir formandome como profesional de este apasionante
+            mundo del desarrollo.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eu
-            sem integer vitae justo. At tempor commodo ullamcorper a lacus
-            vestibulum sed.
+            Por otro lado, me encanta el mundo de la música llevo varios años
+            tocando el fantastico intrumento que es la bateria🥁, que también me
+            sirve para desconectar un poco del mundo de la programación cuando
+            algo se me atasca.
           </p>
-          <p>
-            Condimentum mattis pellentesque id nibh. Egestas sed sed risus
-            pretium quam vulputate.
-          </p>
+          {/* <Accordion
+            accordionOpen={accordionOpen}
+            onClick={() => setAccordionOpen(!accordionOpen)}
+          >
+            Tegnologias
+            <ArrowCircleDown size={20} weight="regular" />
+          </Accordion>
+          {accordionOpen && (
+            <Technologies>
+              <p>
+                <Atom size={20} weight="thin" />
+                Front-End :{' '}
+                <RoughNotation
+                  type="highlight"
+                  color="#936afa1f"
+                  multiline={false}
+                  show={true}
+                  animationDelay={600}
+                  customElement="span"
+                >
+                  ReactJS, NextJS, Jquery
+                </RoughNotation>
+              </p>
+              <p>
+                <FileCss size={20} weight="thin" />
+                CSS :{' '}
+                <RoughNotation
+                  type="highlight"
+                  color="#70f79b34"
+                  multiline={false}
+                  show={true}
+                  animationDelay={1000}
+                  customElement="span"
+                >
+                  Emotion, Styled-components, Sass, bootstrap, TailwindCSS
+                </RoughNotation>
+              </p>
+              <p>
+                <SelectionBackground size={20} weight="thin" />
+                Backend :{' '}
+                <RoughNotation
+                  type="highlight"
+                  color="#2fb9f029"
+                  multiline={false}
+                  show={true}
+                  animationDelay={1400}
+                  customElement="span"
+                >
+                  NodeJS, PHP
+                </RoughNotation>
+              </p>
+              <p>
+                <Cube size={20} weight="thin" />
+                DevOps :{' '}
+                <RoughNotation
+                  type="highlight"
+                  color="#f2f8352b"
+                  multiline={false}
+                  show={true}
+                  animationDelay={1600}
+                  customElement="span"
+                >
+                  {' '}
+                  Docker, Nginx, Apache...
+                </RoughNotation>
+              </p>
+              <p>
+                <Database size={20} weight="thin" />
+                Bases de datos :{' '}
+                <RoughNotation
+                  type="highlight"
+                  color="#e0b1cb2f"
+                  multiline={false}
+                  show={true}
+                  animationDelay={2000}
+                  customElement="span"
+                >
+                  Mysql, MongoDB
+                </RoughNotation>
+              </p>
+            </Technologies>
+          )} */}
         </div>
 
         <div>

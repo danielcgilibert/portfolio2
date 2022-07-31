@@ -45,6 +45,21 @@ export const PresentationStyled = styled.div`
     }
   }
 `
+
+export const Accordion = styled.div`
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+`
+
+export const Technologies = styled.div`
+  text-align: left;
+  & p {
+    display: flex;
+    margin-left: 15px;
+  }
+`
+
 export const ContainerPr = styled.article`
   grid-template-columns: 1fr;
   grid-template-rows: 90% 1fr;

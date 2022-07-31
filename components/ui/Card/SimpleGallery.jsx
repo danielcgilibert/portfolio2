@@ -8,6 +8,10 @@ export default function SimpleGallery(props) {
       gallery: '#' + props.galleryID,
       children: 'a',
       pswpModule: () => import('photoswipe'),
+      showHideAnimationType: 'fade',
+      initialZoomLevel: 0.6,
+      secondaryZoomLevel: 1,
+      maxZoomLevel: 2,
     })
     lightbox.init()
 

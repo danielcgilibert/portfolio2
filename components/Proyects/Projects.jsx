@@ -1,5 +1,6 @@
 import Card from '@components/ui/Card'
 import { proyects } from '@constants/proyects'
+import { Mousewheel } from 'swiper'
 import { SwiperSlide } from 'swiper/react'
 import { ProyectsStyled, SwipperStyled } from './styles'
 
@@ -11,7 +12,9 @@ const Projects = () => {
         <p>Algunos de los proyectos que desarrollo:</p>
         <SwipperStyled
           slidesPerView="auto"
+          modules={[Mousewheel]}
           slidesPerGroup={1}
+          mousewheel={true}
           breakpoints={{
             320: {
               slidesPerView: 1.3,

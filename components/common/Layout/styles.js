@@ -5,7 +5,7 @@ export const LayoutStyled = styled.main`
   width: 100%;
   height: 100%;
   margin: auto;
-  padding: 40px;
+  padding: 25px;
 
   ${bps.tablet} {
     width: 60%;

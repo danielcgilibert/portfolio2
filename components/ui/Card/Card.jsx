@@ -3,19 +3,18 @@ import Button from '../Button'
 import SimpleGallery from './SimpleGallery'
 import { CardStyled } from './styles'
 
-const Card = ({ proyect: { name, cover, hrefCode, hrefWeb } }) => {
+const Card = ({ proyect: { name, covers, hrefCode, hrefWeb } }) => {
   return (
     <CardStyled>
       <SimpleGallery
         galleryID="my-test-gallery"
-        images={[
-          {
-            largeURL: `${cover}`,
-            thumbnailURL: `${cover}`,
-            width: 1500,
-            height: 1200,
-          },
-        ]}
+        images={covers.map((cover) => ({
+          largeURL: `${cover}`,
+          thumbnailURL: `${cover}`,
+          width: 850,
+          height: 1000,
+          bgOpacity: 0.6,
+        }))}
       />
       <h2>{name}</h2>
       <div className="buttons">
